@@ -9,7 +9,7 @@ var LoginSubmitPage = require('./pageObjects/login-submit-page.js');
 
 module.exports = function() {
 
-  this.Given(/^A login with a not registered "([^"]*)" and "([^"]*)"$/, function (email,password) {
+  this.Given(/^A login with an unregistered "([^"]*)" and "([^"]*)"$/, function (email,password) {
     browser.driver.get('https://www.linkedin.com/');
     utils.waitPage("linkedin");
 

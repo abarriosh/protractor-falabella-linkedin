@@ -13,7 +13,7 @@ var Utils = require('./asserts/utils.js');
 module.exports = function() {
   var utils = new Utils();
 
-  this.Given(/^A user logins into the Linkedin Network with a "([^"]*)" and "([^"]*)"$/, function (email,password) {
+  this.Given(/^A user login into the Linkedin Network with a "([^"]*)" and "([^"]*)"$/, function (email,password) {
     browser.driver.get('https://www.linkedin.com/');
     utils.waitPage("linkedin");
 
