@@ -6,9 +6,13 @@ exports.config = {
     './features/*.feature'     // Specs here are the cucumber feature files
   ],
 
-  capabilities: {
-      browserName:'firefox'
-  },
+  multiCapabilities: [
+  {'browserName': 'chrome'},
+  {'browserName': 'firefox' },
+  {'browserName': 'internet explorer',
+    'platform': 'ANY',
+    'version': '11'
+  } ],
 
   framework: 'custom',  // set to "custom" instead of cucumber.
 
@@ -19,5 +23,5 @@ exports.config = {
     require: ['./step_definitions/*.js'],  // require step definition files before executing features
     format: 'pretty'            // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
   },
-  
+
 };

@@ -3,12 +3,12 @@ exports.config = {
   specs: ['unregistered-user-spec.js','view-contact-profile-spec.js'],
 
   multiCapabilities: [
-  {'browserName': 'chrome'}/*,
+  {'browserName': 'chrome'},
   {'browserName': 'firefox' },
   {'browserName': 'internet explorer',
     'platform': 'ANY',
     'version': '11'
-  } */],
+  } ],
 
   jasmineNodeOpts: {
      defaultTimeoutInterval: 40000

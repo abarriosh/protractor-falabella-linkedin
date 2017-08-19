@@ -7,8 +7,8 @@ var Utils = require('./asserts/utils.js');
 
 describe('Linkedin Contact Search', function() {
   it('Should search the Contact with the name "([^"]*)" and Visualize the contact profile', function() {
-    const USER_EMAIL = "abarriosh@gmail.com";    //Should be a Valid Linkedin User email
-    const USER_PASSWORD = "hp692cie";            //Should be a Valid Linkedin User password
+    const USER_EMAIL = "";                       //Should be a Valid Linkedin User email
+    const USER_PASSWORD = "";                    //Should be a Valid Linkedin User password
     const CONTACT_NAME = 'Ronye M. Vernaes K.';  //Should be a Valid contact's name
     const NAME_PATTERN = "/ronyevernaes/";       //Should be a pattern in the URL profile page
     var utils = new Utils();
